@@ -25,6 +25,8 @@ import background_sf from "./background_sf.jpg";
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
+import hero_sf from "./hero/hero_sf.jpg";
+import heroBackground_sf from "./hero/heroBackground_sf.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -103,6 +105,8 @@ export {
   curve,
   robot,
   heroBackground,
+  hero_sf,
+  heroBackground_sf,
   curve1,
   curve2,
   discord,
