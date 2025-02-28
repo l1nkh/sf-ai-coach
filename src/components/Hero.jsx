@@ -1,4 +1,4 @@
-import { curve, heroBackground_sf, hero_sf } from "../assets/index.js"
+import { curve, heroBackground_sf, hero_sf, splash1, splash2, splash3, splash4, splash5 } from "../assets/index.js"
 import Section from "./Section"
 import ProPlayersList from "./ProPlayersList.jsx"
 import Button from "./Button"
@@ -28,10 +28,10 @@ const Hero = () => {
                     <h1 className="h1 mb-6">
                         Unleash Your Inner Champion with AI-Powered Coaching. <br />
                         <span className="inline-block relative">
-                            Fast
+                            <span className="relative z-1">Fast</span>
                             <img
-                                src={curve}
-                                className="absolute top-full left-0 w-full xl:-mt-2"
+                                src={splash3}
+                                className="absolute top-1 left-0 w-full z-0 xl:-mt-2"
                                 width={624}
                                 height={28}
                                 alt="Curve"
@@ -146,6 +146,9 @@ const Hero = () => {
                 <ProPlayersList className="hidden relative z-10 mt-20 lg:block"/>
             </div>
             <BottomLine />
+            <div className="h-screen">
+                asd
+            </div>
         </Section>
     )
 }

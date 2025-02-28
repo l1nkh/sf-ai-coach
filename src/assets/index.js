@@ -92,6 +92,12 @@ import jwong from "../assets/proPlayers/jwong.png";
 import punk from "../assets/proPlayers/punk.png";
 import tokido from "../assets/proPlayers/tokido.png";
 
+import splash1 from "./graffitiSplashes/splash1.png";
+import splash2 from "./graffitiSplashes/splash5.png";
+import splash3 from "./graffitiSplashes/splash6.png";
+import splash4 from "./graffitiSplashes/splash11.png";
+import splash5 from "./graffitiSplashes/splash15.png";
+
 export {
   brainwave,
   check,
@@ -175,5 +181,10 @@ export {
   daigo,
   jwong,
   punk,
-  tokido
+  tokido,
+  splash1,
+  splash2,
+  splash3,
+  splash4,
+  splash5
 };

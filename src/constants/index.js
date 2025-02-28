@@ -82,7 +82,24 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const proPlayers = [daigo, jwong, punk, tokido];
+export const proPlayers = [
+    {
+        name: "Daigo",
+        picture: daigo
+    },
+    {
+        name: "jwong",
+        picture: jwong
+    },
+    {
+        name: "punk",
+        picture: punk
+    },
+    {
+        name: "tokido",
+        picture: tokido
+    },
+];
 
 export const brainwaveServices = [
     "Photo generating",
