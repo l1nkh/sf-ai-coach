@@ -36,6 +36,13 @@ import {
     yourlogo,
 } from "../assets";
 
+import {
+    daigo,
+    jwong,
+    punk,
+    tokido,
+} from "../assets";
+
 export const navigation = [
     {
         id: "0",
@@ -75,7 +82,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const proPlayers = [daigo, jwong, punk, tokido];
 
 export const brainwaveServices = [
     "Photo generating",

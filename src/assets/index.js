@@ -78,6 +78,20 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import keyD from "./commandList/key-d.png";
+import keyL from "./commandList/key-l.png";
+import keyR from "./commandList/key-r.png";
+import keyU from "./commandList/key-u.png";
+import keyPlus from "./commandList/key-plus.png";
+import iconPunch from "./commandList/icon_punch.png";
+import drive2 from "./commandList/d2.png";
+import keyDR from "./commandList/key-dr.png";
+
+import daigo from "../assets/proPlayers/daigo.png";
+import jwong from "../assets/proPlayers/jwong.png";
+import punk from "../assets/proPlayers/punk.png";
+import tokido from "../assets/proPlayers/tokido.png";
+
 export {
   brainwave,
   check,
@@ -150,4 +164,16 @@ export {
   instagram,
   telegram,
   twitter,
+  keyD,
+  keyL,
+  keyR,
+  keyU,
+  keyDR,
+  keyPlus,
+  iconPunch,
+  drive2,
+  daigo,
+  jwong,
+  punk,
+  tokido
 };

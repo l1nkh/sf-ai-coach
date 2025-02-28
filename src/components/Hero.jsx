@@ -1,5 +1,6 @@
 import { curve, heroBackground_sf, hero_sf } from "../assets/index.js"
 import Section from "./Section"
+import ProPlayersList from "./ProPlayersList.jsx"
 import Button from "./Button"
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero"
 import { heroIcons } from "../constants/index.js"
@@ -7,6 +8,7 @@ import { ScrollParallax } from "react-just-parallax"
 import { useRef } from "react"
 import Generating from "./Generating.jsx"
 import boltIcon from "../assets/bolt.svg"
+import CommandList from "./CommandList.jsx"
 
 const Hero = () => {
 
@@ -48,7 +50,7 @@ const Hero = () => {
                     <div className="relative z-1 p-0.5 rounded-2xl
                             bg-conic-gradient from-[#FFFF] to-[#FFA5A5]">
                         <div className="relative bg-n-8 rounded-[1rem]">
-                            <div className="h-[1.4rem] bg-n-10
+                            <div className="h-[1.4rem] bg-[linear-gradient(90deg,_rgba(211,_50,_207,_0.9),_rgba(106,_19,_153,_0.9)_10%,_rgba(55,_5,_135,_0.9)_40%,_rgba(55,_5,_135,_0.9)_60%,_rgba(106,_19,_153,_0.9)_90%,_rgba(211,_50,_207,_0.9))]
                                     rounded-t-[0.9rem]">
                             </div>
                             <div className="aspect-[33/40] rounded-b-[0.9rem]
@@ -64,9 +66,16 @@ const Hero = () => {
                                     alt="Gameplay"
                                 />
                                 <Generating
+                                    id={"Generating"}
                                     className="absolute left-4 right-4 -bottom-5
                                     md:left-1/2 md:-translate-x-1/2 md:bottom-3
                                     md:right-auto md:w-[40rem] xl:flex"
+
+                                    Prompt={
+                                        "Use your drive meter to perform the" +
+                                        " <b className='animate-pulse " +
+                                        "text-yellow-300'>ULTRA</b> at the end of the combo."
+                                    }
                                 />
 
 
@@ -87,8 +96,24 @@ const Hero = () => {
                                     </ul>*/}
                                     <div className="
                                         hidden absolute -left-[5.5rem]
+                                        bottom-[7.5rem] px-3 py-3 shadow-2xl shadow-violet-600 bg-[linear-gradient(90deg,_rgba(211,_50,_207,_0.9),_rgba(106,_19,_153,_0.9)_10%,_rgba(55,_5,_135,_0.9)_40%,_rgba(55,_5,_135,_0.9)_60%,_rgba(106,_19,_153,_0.9)_90%,_rgba(211,_50,_207,_0.9))]
+                                        backdrop:blur border border-[#f9f5fb] rounded-2xl xl:flex items-center">
+
+
+                                        {/*TEMP
+
+                                        OTHER STYLE
+                                        hidden absolute -left-[5.5rem]
                                         bottom-[7.5rem] px-3 py-3 bg-n-9/80 backdrop:blur
-                                        border border-n-1/10 rounded-2xl xl:flex items-center">
+                                        border border-n-1/10 rounded-2xl xl:flex items-center
+                                        
+                                        SF6 STYLE
+                                        hidden absolute -left-[5.5rem]
+                                        bottom-[7.5rem] px-3 py-3 bg-[linear-gradient(90deg,_rgba(211,_50,_207,_0.9),_rgba(106,_19,_153,_0.9)_10%,_rgba(55,_5,_135,_0.9)_40%,_rgba(55,_5,_135,_0.9)_60%,_rgba(106,_19,_153,_0.9)_90%,_rgba(211,_50,_207,_0.9))]
+                                        backdrop:blur border border-[#f9f5fb] rounded-2xl xl:flex items-center"
+                                        
+                                        */}
+
                                         <img
                                             src={boltIcon}
                                             className="w-auto h-8"
@@ -99,6 +124,7 @@ const Hero = () => {
                                             AI Generation
                                         </span>
                                     </div>
+                                    <CommandList />
                                 </ScrollParallax>
                             </div>
                         </div>
@@ -116,8 +142,8 @@ const Hero = () => {
                     </div>
 
                     <BackgroundCircles />
-
                 </div>
+                <ProPlayersList className="hidden relative z-10 mt-20 lg:block"/>
             </div>
             <BottomLine />
         </Section>
