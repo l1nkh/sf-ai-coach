@@ -5,6 +5,8 @@ import Section from './components/Section';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import SoftwareIntegration from './components/SoftwareIntegration';
+import Services from './components/Services';
+import Pricing from './components/Pricing';
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <Hero />
         <Features />
         <SoftwareIntegration />
+        <Services />
+        <Pricing />
       </div>
       <ButtonGradient />
     </>

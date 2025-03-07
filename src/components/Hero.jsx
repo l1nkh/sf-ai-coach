@@ -14,6 +14,12 @@ const Hero = () => {
 
     const parallaxRef = useRef(null);
 
+    const generatingMessages = [
+        "Use your drive meter to perform the <b class='animate-pulse text-yellow-300'>ULTRA</b> at the end of the combo",
+        "<b class='animate-pulse text-yellow-300'>Don't</b> overcommit to heavy punches, it’s easy to punish",
+        "You’re too predictable with the fireballs, vary the <b class='animate-pulse text-yellow-300'>SPEED</b>"
+    ];
+
     return (
         <Section
             id="hero"
@@ -71,11 +77,7 @@ const Hero = () => {
                                     md:left-1/2 md:-translate-x-1/2 md:bottom-3
                                     md:right-auto md:w-[40rem] xl:flex"
 
-                                    Prompt={
-                                        "Use your drive meter to perform the" +
-                                        " <b className='animate-pulse " +
-                                        "text-yellow-300'>ULTRA</b> at the end of the combo."
-                                    }
+                                    messages={generatingMessages}
                                 />
 
 

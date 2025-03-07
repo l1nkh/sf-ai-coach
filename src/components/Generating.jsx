@@ -3,13 +3,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import loading from "../assets/loading.png";
 
-const messages = [
-    "Use your drive meter to perform the <b class='animate-pulse text-yellow-300'>ULTRA</b> at the end of the combo",
-    "<b class='animate-pulse text-yellow-300'>Don't</b> overcommit to heavy punches, it’s easy to punish",
-    "You’re too predictable with the fireballs, vary the <b class='animate-pulse text-yellow-300'>SPEED</b>"
-];
-
-const Generating = ({ className }) => {
+const Generating = ({ className, messages }) => {
     const textRef = useRef(null);
     const timeline = useRef(null);
 

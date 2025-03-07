@@ -234,7 +234,7 @@ export const softwareIntegrationApps = [
 export const pricing = [
     {
         id: "0",
-        title: "Basic",
+        title: "Free",
         description: "AI chatbot, personalized recommendations",
         price: "0",
         features: [
@@ -245,9 +245,9 @@ export const pricing = [
     },
     {
         id: "1",
-        title: "Premium",
+        title: "Basic",
         description: "Advanced AI chatbot, priority support, analytics dashboard",
-        price: "9.99",
+        price: "3.99",
         features: [
             "An advanced AI chatbot that can understand complex queries",
             "An analytics dashboard to track your conversations",
@@ -256,9 +256,9 @@ export const pricing = [
     },
     {
         id: "2",
-        title: "Enterprise",
+        title: "Premium",
         description: "Custom AI chatbot, advanced analytics, dedicated account",
-        price: null,
+        price: "9.99",
         features: [
             "An AI chatbot that can understand your queries",
             "Personalized recommendations based on your preferences",
