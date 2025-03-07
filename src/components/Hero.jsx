@@ -146,9 +146,6 @@ const Hero = () => {
                 <ProPlayersList className="hidden relative z-10 mt-20 lg:block"/>
             </div>
             <BottomLine />
-            <div className="h-screen">
-                asd
-            </div>
         </Section>
     )
 }

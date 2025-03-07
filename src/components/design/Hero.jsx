@@ -50,9 +50,9 @@ export const BackgroundCircles = ({ parallaxRef }) => {
       {/* Moving background colored circle balls */}
       <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}>
         <img 
-          src={graffiti_1} 
+          src={graffiti_1}
           className="relative top-[35rem] scale-[140%] opacity-50"
-          alt="grafitti" 
+          alt="grafitti"
         />
       
       {/*<div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[46deg]">

@@ -1,9 +1,9 @@
 import {
-    benefitIcon1,
-    benefitIcon2,
-    benefitIcon3,
-    benefitIcon4,
-    benefitImage2,
+    featureIcon1,
+    featureIcon2,
+    featureIcon3,
+    featureIcon4,
+    featureImage2,
     chromecast,
     disc02,
     discord,
@@ -151,26 +151,28 @@ export const roadmap = [
     },
 ];
 
-export const collabText =
-    "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+export const softwareIntegrationText =
+    "Backed by an evolving database of community knowledge, our AI coach " +
+    "integrates real-time insights from major Platforms—analyzing trends, " +
+    "discussions, and gameplay to keep you ahead."
 
-export const collabContent = [
+export const softwareIntegrationContent = [
     {
         id: "0",
-        title: "Seamless Integration",
-        text: collabText,
+        title: "Platform Integration",
+        text: "Integrating the power of the community for unparalleled gameplay guidance.",
     },
     {
         id: "1",
-        title: "Smart Automation",
+        title: "Smart Compare",
     },
     {
         id: "2",
-        title: "Top-notch Security",
+        title: "Reviewed by the Pros",
     },
 ];
 
-export const collabApps = [
+export const softwareIntegrationApps = [
     {
         id: "0",
         title: "Figma",
@@ -265,56 +267,56 @@ export const pricing = [
     },
 ];
 
-export const benefits = [
+export const features = [
     {
         id: "0",
-        title: "Ask anything",
-        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-        backgroundUrl: "./src/assets/benefits/card-1.svg",
-        iconUrl: benefitIcon1,
-        imageUrl: benefitImage2,
+        title: "Real-Time Match Guidance",
+        text: "Get instant, AI-driven advice during your matches based on your opponent’s moves, frame data, and your playstyle. The AI helps you react efficiently, counter effectively, and adapt on the fly.",
+        backgroundUrl: "./src/assets/features/card-1.svg",
+        iconUrl: featureIcon1,
+        imageUrl: featureImage2,
     },
     {
         id: "1",
-        title: "Improve everyday",
-        text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-        backgroundUrl: "./src/assets/benefits/card-2.svg",
-        iconUrl: benefitIcon2,
-        imageUrl: benefitImage2,
+        title: "Advanced Frame Data Analysis",
+        text: "Stay ahead with precise frame data breakdowns. Know when to attack, block, or punish based on frame advantage and move priority, helping you make optimal decisions in every situation.",
+        backgroundUrl: "./src/assets/features/card-2.svg",
+        iconUrl: featureIcon2,
+        imageUrl: featureImage2,
         light: true,
     },
     {
         id: "2",
-        title: "Connect everywhere",
-        text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-        backgroundUrl: "./src/assets/benefits/card-3.svg",
-        iconUrl: benefitIcon3,
-        imageUrl: benefitImage2,
+        title: "Personalized Training Plans",
+        text: "Improve with structured training plans tailored to your skill level and goals. The AI creates custom schedules, drills, and match simulations to help you level up efficiently.",
+        backgroundUrl: "./src/assets/features/card-3.svg",
+        iconUrl: featureIcon3,
+        imageUrl: featureImage2,
     },
     {
         id: "3",
-        title: "Fast responding",
-        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-        backgroundUrl: "./src/assets/benefits/card-4.svg",
-        iconUrl: benefitIcon4,
-        imageUrl: benefitImage2,
+        title: "Pro-Style Customization",
+        text: "Customize your AI coach’s voice, appearance, and personality to match your favorite Street Fighter pros. Train with advice and feedback that mirrors top-level competitors.",
+        backgroundUrl: "./src/assets/features/card-4.svg",
+        iconUrl: featureIcon4,
+        imageUrl: featureImage2,
         light: true,
     },
     {
         id: "4",
-        title: "Ask anything",
-        text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-        backgroundUrl: "./src/assets/benefits/card-5.svg",
-        iconUrl: benefitIcon1,
-        imageUrl: benefitImage2,
+        title: "Match Review & Insights",
+        text: "Upload or sync your match replays for AI-powered analysis. Get breakdowns of key mistakes, strengths, and actionable tips to refine your gameplay.",
+        backgroundUrl: "./src/assets/features/card-5.svg",
+        iconUrl: featureIcon1,
+        imageUrl: featureImage2,
     },
     {
         id: "5",
-        title: "Improve everyday",
-        text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-        backgroundUrl: "./src/assets/benefits/card-6.svg",
-        iconUrl: benefitIcon2,
-        imageUrl: benefitImage2,
+        title: "Opponent Playstyle Recognition",
+        text: "The AI learns and identifies different playstyles—rushdown, zoner, grappler, etc.—to give you specific strategies to counter your opponents effectively in real time.",
+        backgroundUrl: "./src/assets/features/card-6.svg",
+        iconUrl: featureIcon2,
+        imageUrl: featureImage2,
     },
 ];
 
