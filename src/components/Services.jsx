@@ -2,6 +2,9 @@ import React from 'react'
 import Section from './Section'
 import Heading from './Heading'
 import Generating from './Generating'
+import hadouken from '../assets/hadouken.png'
+import kim from '../assets/kimberly.png'
+import luke from '../assets/luke.jpg'
 import { check, service1, service2, service3 } from '../assets'
 import { brainwaveServices, brainwaveServicesIcons } from '../constants'
 import { PhotoChatMessage, Gradient, VideoBar, VideoChatMessage } from "./design/Services"
@@ -28,13 +31,13 @@ const Services = () => {
                         mb-5 p-8 border-n-1/10 border rounded-3xl overflow-hidden
                         lg:p-20 xl:h-[46rem]">
                         <div className='absolute top-0 left-0 w-full h-full
-                    pointer-events-none md:w-3/5 xl:w-auto'>
+                    pointer-events-none md:w-full xl:w-full'>
                             <img
                                 className='w-full h-full object-cover md:object-right'
                                 height={730}
                                 width={800}
-                                src={service1}
-                                alt=""
+                                src={hadouken}
+                                alt="hadouken"
                             />
                         </div>
                         <div className="relative z-1 max-w-[17rem] ml-auto">
@@ -74,8 +77,8 @@ const Services = () => {
                         rounded-3xl overflow-hidden">
                             <div className="absolute inset-0">
                                 <img
-                                    src={service2}
-                                    className='h-full w-full object-cover'
+                                    src={kim}
+                                    className='absolute left-[8rem] h-full w-full object-left object-cover'
                                     width={630}
                                     height={750}
                                     alt="robot"
@@ -130,7 +133,7 @@ const Services = () => {
                             <div className="relative h-[20rem] bg-n-8 rounded-xl
                             overflow-hidden md:h-[25rem]">
                                 <img
-                                    src={service3}
+                                    src={luke}
                                     alt="Art"
                                     width={520}
                                     height={400}
