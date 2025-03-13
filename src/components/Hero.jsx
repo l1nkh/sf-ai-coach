@@ -108,12 +108,12 @@ const Hero = () => {
                                         hidden absolute -left-[5.5rem]
                                         bottom-[7.5rem] px-3 py-3 bg-n-9/80 backdrop:blur
                                         border border-n-1/10 rounded-2xl xl:flex items-center
-                                        
+
                                         SF6 STYLE
                                         hidden absolute -left-[5.5rem]
                                         bottom-[7.5rem] px-3 py-3 bg-[linear-gradient(90deg,_rgba(211,_50,_207,_0.9),_rgba(106,_19,_153,_0.9)_10%,_rgba(55,_5,_135,_0.9)_40%,_rgba(55,_5,_135,_0.9)_60%,_rgba(106,_19,_153,_0.9)_90%,_rgba(211,_50,_207,_0.9))]
                                         backdrop:blur border border-[#f9f5fb] rounded-2xl xl:flex items-center"
-                                        
+
                                         */}
 
                                         <img

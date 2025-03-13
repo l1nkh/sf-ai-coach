@@ -4,6 +4,7 @@ import { useState } from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import sf6Logo from "../assets/sf6_white.png";
+import sfcoach_colored from "../assets/sfcoach_colored.png"
 import { navigation } from "../constants";
 
 import Button from "./Button";
@@ -37,8 +38,8 @@ const Header = () => {
         ${openNavigation ? 'bg-n-8' : 'bg-n-8/90 backdrop-blur-sm'}`}
         >
             <div className="flex items-center px-5 lg:px-7 xl:px-10 max-lg:py-4">
-                <a className="block w-[12rem] xl:mr-8" href="#hero">
-                    <img src={sf6Logo} width={190} height={40} alt="SFCoach" />
+                <a className="block w-[12rem] my-2 xl:mr-8" href="#hero">
+                    <img src={sfcoach_colored} width={100} height={40} alt="SFCoach" />
                 </a>
 
                 <nav className={`${openNavigation ? "flex" : "hidden"}

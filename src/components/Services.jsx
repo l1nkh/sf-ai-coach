@@ -2,9 +2,11 @@ import React from 'react'
 import Section from './Section'
 import Heading from './Heading'
 import Generating from './Generating'
+import ItemBox from './ItemBox'
 import hadouken from '../assets/hadouken.png'
+import sfcoachVideo from '../assets/sfcoach_v1.mp4'
 import kim from '../assets/kimberly.png'
-import luke from '../assets/luke.jpg'
+import matchReplay from '../assets/matchReplay.jpg'
 import { check, service1, service2, service3 } from '../assets'
 import { brainwaveServices, brainwaveServicesIcons } from '../constants'
 import { PhotoChatMessage, Gradient, VideoBar, VideoChatMessage } from "./design/Services"
@@ -12,9 +14,9 @@ import { PhotoChatMessage, Gradient, VideoBar, VideoChatMessage } from "./design
 const Services = () => {
 
     const messages = [
-        "Use your drive meter to perform the <b class='animate-pulse text-yellow-300'>ULTRA</b> at the end of the combo",
-        "<b class='animate-pulse text-yellow-300'>Don't</b> overcommit to heavy punches, it’s easy to punish",
-        "You’re too predictable with the fireballs, vary the <b class='animate-pulse text-yellow-300'>SPEED</b>"
+        "<b class='animate-pulse text-yellow-300'>Slow</b> down your fireball inputs",
+        "Make <b class='animate-pulse text-yellow-300'>Slow and Longer</b> motions to decrease miss inputs.",
+        "Mind <b class='animate-pulse text-yellow-300'>spacing</b>"
     ];
 
     return (
@@ -28,21 +30,26 @@ const Services = () => {
 
                 <div className="relative">
                     <div className="relative z-1 flex items-center h-[39rem]
-                        mb-5 p-8 border-n-1/10 border rounded-3xl overflow-hidden
-                        lg:p-20 xl:h-[46rem]">
-                        <div className='absolute top-0 left-0 w-full h-full
+                        mb-5 p-8 border-n-1/10 border rounded-3xl  overflow-hidden
+                        lg:p-5 xl:h-[46rem]">
+                        <div className='absolute top-0 left-0 translate-x-20 w-full h-full
                     pointer-events-none md:w-full xl:w-full'>
-                            <img
-                                className='w-full h-full object-cover md:object-right'
-                                height={730}
-                                width={800}
-                                src={hadouken}
-                                alt="hadouken"
+                            <video
+                                className='hidden w-full h-full rounded-3xl
+                                    scale-[.80] opacity-60 object-cover md:object-right md:flex'
+                                src={sfcoachVideo}
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
                             />
+
                         </div>
-                        <div className="relative z-1 max-w-[17rem] ml-auto">
-                            <h4 className='h4 mb-4'>Smartest Coach</h4>
-                            <p className='body-2 mb-[3rem] text-n-3'>SfCoach unlock the potential within you</p>
+                        <ItemBox
+                            heading="Smartest Coach"
+                            description="SFCoach unlocks the potential within you"
+                            className="max-w-[20rem]"
+                        >
                             <ul className='body-2'>
                                 {brainwaveServices.map((item, index) => (
                                     <li
@@ -62,12 +69,11 @@ const Services = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
-
+                        </ItemBox>
                         <Generating
-                            className='absolute left-4 right-4 bottom-4 border-n-1/10
-                        border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2
-                        md:w-[40rem] xl:flex'
+                            className='hidden absolute left-4 right-4 bottom-4 border-n-1/10
+                        border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-[35%]
+                        md:w-[40rem] lg:flex'
                             messages={messages}
                         />
                     </div>
@@ -81,7 +87,7 @@ const Services = () => {
                                     className='absolute left-[8rem] h-full w-full object-left object-cover'
                                     width={630}
                                     height={750}
-                                    alt="robot"
+                                    alt="gameplay"
                                 />
                             </div>
                             <div className="absolute inset-0 flex flex-col
@@ -98,11 +104,11 @@ const Services = () => {
                             lg:min-h-[46rem]">
                             <div className="py-12 px-4 xl:px-8">
                                 <h4 className="h4 mb-4">
-                                    Video Generation
+                                    Match Replay Analysis
                                 </h4>
                                 <p className="body-2 mb-[2rem] text-n-3">
-                                    The world's most powerful AI photo and video art generation engine.
-                                    What will you create?
+                                    Review your previous online and offline matches 
+                                        with detailed analysis and feedback.
                                 </p>
                                 <ul className="flex items-center justify-between">
                                     {brainwaveServicesIcons.map((item, index) => (
@@ -110,12 +116,12 @@ const Services = () => {
                                             key={index}
                                             className={`rounded-2xl flex items-center justify-center
                                             ${index === 2 ?
-                                                'w-[3rem] h-[3rem] p-0.5' +
-                                                ' bg-conic-gradient' +
-                                                ' md:w-[4.5rem] md:h-[4.5rem]'
-                                                :
-                                                'flex w-10 h-10 bg-n-6 md:w-15 md:h-15'
-                                            }`}
+                                                    'w-[3rem] h-[3rem] p-0.5' +
+                                                    ' bg-conic-gradient' +
+                                                    ' md:w-[4.5rem] md:h-[4.5rem]'
+                                                    :
+                                                    'flex w-10 h-10 bg-n-6 md:w-15 md:h-15'
+                                                }`}
                                         >
                                             <div className={index === 2 ?
                                                 'flex items-center justify-center' +
@@ -133,19 +139,18 @@ const Services = () => {
                             <div className="relative h-[20rem] bg-n-8 rounded-xl
                             overflow-hidden md:h-[25rem]">
                                 <img
-                                    src={luke}
+                                    src={matchReplay}
                                     alt="Art"
                                     width={520}
                                     height={400}
                                     className="w-full h-full object-cover"
                                 />
 
-                                <VideoChatMessage />
                                 <VideoBar />
                             </div>
                         </div>
                     </div>
-                    <Gradient/>
+                    <Gradient />
                 </div>
             </div>
         </Section>

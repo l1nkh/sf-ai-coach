@@ -1,19 +1,20 @@
 import React from 'react'
 import Section from './Section'
 import { smallSphere, stars } from '../assets'
+import sfcoach_colored from '../assets/sfcoach_colored.png'
 import Heading from './Heading'
 import PricingList from './PricingList'
 import {LeftLine, RightLine} from './design/Pricing';
 
 const Pricing = () => {
   return (
-    <Section id="pricing" className='overflow-hidden'>
+    <Section id="pricing" className=' overflow-hidden'>
         <div className="container relative z-2">
             <div className="hidden reative justify-center mb-[6rem] lg:flex">
                 <img
-                    src={smallSphere}
+                    src={sfcoach_colored}
                     className='relative z-1'
-                    width={255}
+                    width={500}
                     height={255}
                     alt="sphere"
                 />

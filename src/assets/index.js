@@ -21,6 +21,9 @@ import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
 import background_sf from "./background_sf.jpg";
+import ProCustomization from "./ProCustomization.png"
+import playButton from "./playButton.svg"
+import gamepad from "./gamepad.svg"
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
@@ -31,13 +34,13 @@ import heroBackground_sf from "./hero/heroBackground_sf.jpg";
 import curve1 from "./softwareIntegration/curve-1.svg";
 import curve2 from "./softwareIntegration/curve-2.svg";
 import discord from "./softwareIntegration/discord.png";
-import figma from "./softwareIntegration/figma.png";
-import framer from "./softwareIntegration/framer.png";
-import notion from "./softwareIntegration/notion.png";
-import photoshop from "./softwareIntegration/photoshop.png";
-import protopie from "./softwareIntegration/protopie.png";
-import raindrop from "./softwareIntegration/raindrop.png";
-import slack from "./softwareIntegration/slack.png";
+import steam from "./softwareIntegration/steam.png";
+import playstation from "./softwareIntegration/playstation.png";
+import youtube from "./softwareIntegration/youtube.png";
+import x from "./softwareIntegration/x.png";
+import twitch from "./softwareIntegration/twitch.png";
+import capcom from "./softwareIntegration/capcom.png";
+import xbox from "./softwareIntegration/xbox.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -130,13 +133,13 @@ export {
   curve1,
   curve2,
   discord,
-  figma,
-  framer,
-  notion,
-  photoshop,
-  protopie,
-  raindrop,
-  slack,
+  steam,
+  playstation,
+  youtube,
+  x,
+  twitch,
+  capcom,
+  xbox,
   service1,
   service2,
   service3,
@@ -186,5 +189,8 @@ export {
   splash2,
   splash3,
   splash4,
-  splash5
+  splash5,
+  ProCustomization,
+  playButton,
+  gamepad
 };

@@ -5,8 +5,8 @@ const Button = ({ className, innerClassName, href, onClick, children, px, white 
 
     const classes = `button relative inline-flex items-center
         justify-center h-11 transition-colors
-        rounded-xl bg-conic-gradient p-[.09rem]
-        ${white ? "text-n-8" : "text-n-1"}
+        rounded-xl bg-conic-gradient
+        ${white ? "text-n-8" : "text-n-1 p-[.09rem]"}
         ${className || ""}`
 
     const innerClasses = `relative flex items-center justify-center w-full h-full
