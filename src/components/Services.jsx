@@ -7,9 +7,10 @@ import hadouken from '../assets/hadouken.png'
 import sfcoachVideo from '../assets/sfcoach_v1.mp4'
 import kim from '../assets/kimberly.png'
 import matchReplay from '../assets/matchReplay.jpg'
-import { check, service1, service2, service3 } from '../assets'
-import { brainwaveServices, brainwaveServicesIcons } from '../constants'
+import { check, service1, service2, service3, ryu_feature } from '../assets'
+import { ServicesList, ServicesIconsList } from '../constants'
 import { PhotoChatMessage, Gradient, VideoBar, VideoChatMessage } from "./design/Services"
+import TagLine from './Tagline'
 
 const Services = () => {
 
@@ -30,13 +31,13 @@ const Services = () => {
 
                 <div className="relative">
                     <div className="relative z-1 flex items-center h-[39rem]
-                        mb-5 p-8 border-n-1/10 border rounded-3xl  overflow-hidden
+                        mb-5 sm:p-8 border-n-1/10 border rounded-3xl  overflow-hidden
                         lg:p-5 xl:h-[46rem]">
-                        <div className='absolute top-0 left-0 translate-x-20 w-full h-full
-                    pointer-events-none md:w-full xl:w-full'>
+                        <div className='absolute p-6 z-2 top-[23rem] md:top-0 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-20 anchor-center w-[22rem] h-full
+                    pointer-events-none md:p-0 md:z-0 md:w-full xl:w-full'>
                             <video
-                                className='hidden w-full h-full rounded-3xl
-                                    scale-[.80] opacity-60 object-cover md:object-right md:flex'
+                                className='md:w-full md:h-full rounded-3xl
+                                    md:scale-[.80] md:opacity-60 object-cover md:object-right md:flex'
                                 src={sfcoachVideo}
                                 autoPlay
                                 loop
@@ -48,10 +49,10 @@ const Services = () => {
                         <ItemBox
                             heading="Smartest Coach"
                             description="SFCoach unlocks the potential within you"
-                            className="max-w-[20rem]"
+                            className="h-full w-full sm:h-fit sm:max-w-[20rem]"
                         >
                             <ul className='body-2'>
-                                {brainwaveServices.map((item, index) => (
+                                {ServicesList.map((item, index) => (
                                     <li
                                         key={index}
                                         className='flex items-start py-4 border-t
@@ -83,21 +84,37 @@ const Services = () => {
                         rounded-3xl overflow-hidden">
                             <div className="absolute inset-0">
                                 <img
-                                    src={kim}
-                                    className='absolute left-[8rem] h-full w-full object-left object-cover'
+                                    src={ryu_feature}
+                                    className='absolute left-0 h-full w-full object-left object-cover'
                                     width={630}
                                     height={750}
-                                    alt="gameplay"
+                                    alt="Ryu"
                                 />
                             </div>
                             <div className="absolute inset-0 flex flex-col
                             justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90">
                                 <h4 className='h4 mb-4'>Ask Anything</h4>
                                 <p className='body-2 mb-[3rem] text-n-3'>
-                                    Chat with SfCoach to take ask specifics.
+                                    Chat with SfCoach to ask specifics.
                                 </p>
                             </div>
-                            <PhotoChatMessage />
+                            <div className="absolute top-8 right-[5.5rem] max-w-[17.5rem]
+                                py-6 px-8  bg-n-8/60 backdrop-blur-sm border
+                                border-white/10 rounded-t-xl rounded-bl-xl
+                                font-code text-base lg:top-16 lg:right-[18.75rem]
+                                md:w-full lg:max-w-[17.5rem]"
+                            >
+                                <div className="flex flex-col gap-y-10">
+                                    <div className='flex self-start'>
+                                        Coach Ryu what is the frames on block 
+                                        of Kimberly Standing Heavy Punk?
+                                    </div>
+                                    <div className='flex flex-col self-end'>
+                                        <TagLine className="self-end">Ryu</TagLine>
+                                        generating...
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="p-4 bg-n-7 rounded-3xl overflow-hidden
@@ -107,11 +124,11 @@ const Services = () => {
                                     Match Replay Analysis
                                 </h4>
                                 <p className="body-2 mb-[2rem] text-n-3">
-                                    Review your previous online and offline matches 
-                                        with detailed analysis and feedback.
+                                    Review your previous online and offline matches
+                                    with detailed analysis and feedback.
                                 </p>
                                 <ul className="flex items-center justify-between">
-                                    {brainwaveServicesIcons.map((item, index) => (
+                                    {ServicesIconsList.map((item, index) => (
                                         <li
                                             key={index}
                                             className={`rounded-2xl flex items-center justify-center

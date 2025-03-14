@@ -101,6 +101,13 @@ import splash3 from "./graffitiSplashes/splash6.png";
 import splash4 from "./graffitiSplashes/splash11.png";
 import splash5 from "./graffitiSplashes/splash15.png";
 
+import ryu_feature from "./characters/ryu.png";
+import ken_feature from "./characters/ken.png";
+import luke_feature from "./characters/luke.png";
+import jamie_feature from "./characters/jamie.png";
+import chunli_feature from "./characters/chunli.png";
+import akuma_feature from "./characters/gouki_akuma.png";
+
 export {
   brainwave,
   check,
@@ -192,5 +199,11 @@ export {
   splash5,
   ProCustomization,
   playButton,
-  gamepad
+  gamepad,
+  ryu_feature,
+  ken_feature,
+  luke_feature,
+  jamie_feature,
+  chunli_feature,
+  akuma_feature
 };

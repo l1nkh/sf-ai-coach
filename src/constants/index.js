@@ -36,7 +36,13 @@ import {
     yourlogo,
     ProCustomization,
     playButton,
-    gamepad
+    gamepad,
+    ryu_feature,
+    ken_feature,
+    luke_feature,
+    jamie_feature,
+    chunli_feature,
+    akuma_feature
 } from "../assets";
 
 import {
@@ -104,13 +110,13 @@ export const proPlayers = [
     },
 ];
 
-export const brainwaveServices = [
+export const ServicesList = [
     "Real-Time Prompts",
     "Practice drills",
     "Match Analysis",
 ];
 
-export const brainwaveServicesIcons = [
+export const ServicesIconsList = [
     gamepad,
     recording01,
     playButton,
@@ -277,7 +283,7 @@ export const features = [
         text: "Get instant, AI-driven advice during your matches based on your opponent’s moves, frame data, and your playstyle. The AI helps you react efficiently, counter effectively, and adapt on the fly.",
         backgroundUrl: "./src/assets/features/card-1.svg",
         iconUrl: featureIcon1,
-        imageUrl: featureImage2,
+        imageUrl: ryu_feature,
     },
     {
         id: "1",
@@ -285,7 +291,7 @@ export const features = [
         text: "Stay ahead with precise frame data breakdowns. Know when to attack, block, or punish based on frame advantage and move priority, helping you make optimal decisions in every situation.",
         backgroundUrl: "./src/assets/features/card-2.svg",
         iconUrl: featureIcon2,
-        imageUrl: featureImage2,
+        imageUrl: ken_feature,
         light: true,
     },
     {
@@ -294,7 +300,7 @@ export const features = [
         text: "Improve with structured training plans tailored to your skill level and goals. The AI creates custom schedules, drills, and match simulations to help you level up efficiently.",
         backgroundUrl: "./src/assets/features/card-3.svg",
         iconUrl: featureIcon3,
-        imageUrl: featureImage2,
+        imageUrl: luke_feature,
     },
     {
         id: "3",
@@ -302,7 +308,7 @@ export const features = [
         text: "Customize your AI coach’s voice, appearance, and personality to match your favorite Street Fighter pros. Train with advice and feedback that mirrors top-level competitors.",
         backgroundUrl: "./src/assets/features/card-4.svg",
         iconUrl: featureIcon4,
-        imageUrl: featureImage2,
+        imageUrl: jamie_feature,
         light: true,
     },
     {
@@ -311,7 +317,7 @@ export const features = [
         text: "Upload or sync your match replays for AI-powered analysis. Get breakdowns of key mistakes, strengths, and actionable tips to refine your gameplay.",
         backgroundUrl: "./src/assets/features/card-5.svg",
         iconUrl: featureIcon1,
-        imageUrl: featureImage2,
+        imageUrl: chunli_feature,
     },
     {
         id: "5",
@@ -319,7 +325,7 @@ export const features = [
         text: "The AI learns and identifies different playstyles—rushdown, zoner, grappler, etc.—to give you specific strategies to counter your opponents effectively in real time.",
         backgroundUrl: "./src/assets/features/card-6.svg",
         iconUrl: featureIcon2,
-        imageUrl: featureImage2,
+        imageUrl: akuma_feature,
     },
 ];
 

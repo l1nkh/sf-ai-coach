@@ -30,15 +30,11 @@ const Features = () => {
                                 <p className='body-2 mb-6 text-n-3'>
                                     {item.text}
                                 </p>
-                                <div className="flex items-center mt-auto">
-                                    <img
-                                        src={item.iconUrl}
-                                        width={48}
-                                        height={48}
-                                        alt={item.title}
-                                    />
+                                <div className="flex items-center mt-auto mr-auto">
                                     <p className='ml-auto font-code text-xs font-bold
-                                text-n-1 uppercase tracking-wider'>Explore more</p>
+                                    text-n-1 uppercase tracking-wider'>
+                                        Explore more
+                                    </p>
                                     <Arrow />
                                 </div>
                             </div>
@@ -47,7 +43,7 @@ const Features = () => {
 
                             <div className='absolute inset-0.5 bg-n-8 rounded-2xl'>
                                 <div className="absolute inset-0 opacity-0
-                                transition-opacity hover:opacity-10 ">
+                                transition-opacity hover:opacity-30 ">
                                     {item.imageUrl && (
                                         <img
                                             src={item.imageUrl}
