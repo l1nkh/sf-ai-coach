@@ -240,23 +240,23 @@ export const pricing = [
     {
         id: "1",
         title: "Basic",
-        description: "Advanced AI chatbot, priority support, analytics dashboard",
+        description: "Advanced Artificial intelligence and more robust tools",
         price: "3.99",
         features: [
             "Match replays available with robust AI-powered analytic data",
-            "An analytics dashboard to track your conversations",
-            "Priority support to solve issues quickly",
+            "Frame data analysis system that suits your needs",
+            "Opponent playstyle recognition",
         ],
     },
     {
         id: "2",
         title: "Premium",
-        description: "Custom AI chatbot, advanced analytics, dedicated account",
+        description: "Advanced customization and priority testing",
         price: "9.99",
         features: [
-            "An AI chatbot that can understand your queries",
-            "Personalized recommendations based on your preferences",
-            "Ability to explore the app and its features without any cost",
+            "AI driven fully personalized training plans and dedicated support",
+            "Fully customize your AI Coach with faces and voices from the pros",
+            "Test new feature that are yet to be released",
         ],
     },
 ];
