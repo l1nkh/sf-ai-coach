@@ -1,6 +1,5 @@
 import React from 'react'
 import Section from './Section'
-import { smallSphere, stars } from '../assets'
 import sfcoach_colored from '../assets/sfcoach_colored.png'
 import Heading from './Heading'
 import PricingList from './PricingList'
@@ -16,18 +15,8 @@ const Pricing = () => {
                     className='relative z-1'
                     width={500}
                     height={255}
-                    alt="sphere"
+                    alt="sfcoach logo"
                 />
-                <div className="absolute top-1/2 left-1/2 w-[60rem]
-                -translate-x-1/2 -translate-y-1/2 pointer-ecents-none">
-                    <img
-                        src={stars}
-                        className="w-full"
-                        width={950}
-                        height={400}
-                        alt="stars"
-                    />
-                </div>
             </div>
 
             <Heading

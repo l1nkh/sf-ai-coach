@@ -4,7 +4,6 @@ import Heading from './Heading';
 import { features } from '../constants/index.js';
 import Arrow from '../assets/svg/Arrow.jsx';
 import { GradientLight } from './design/Features.jsx';
-import ClipPath from '../assets/svg/clipPath'
 
 const Features = () => {
     return (

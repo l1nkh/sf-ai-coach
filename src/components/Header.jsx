@@ -3,7 +3,6 @@ import { useState } from "react";
 
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import sf6Logo from "../assets/sf6_white.png";
 import sfcoach_colored from "../assets/sfcoach_colored.png"
 import { navigation } from "../constants";
 

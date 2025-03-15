@@ -1,9 +1,4 @@
 import {
-    featureIcon1,
-    featureIcon2,
-    featureIcon3,
-    featureIcon4,
-    featureImage2,
     chromecast,
     disc02,
     discord,
@@ -12,29 +7,19 @@ import {
     steam,
     file02,
     playstation,
-    homeSmile,
     instagram,
-    notification2,
-    notification3,
-    notification4,
     youtube,
     x,
     plusSquare,
     twitch,
     capcom,
     recording01,
-    recording03,
-    roadmap1,
-    roadmap2,
-    roadmap3,
-    roadmap4,
     searchMd,
     xbox,
     sliders04,
     telegram,
     twitter,
-    yourlogo,
-    ProCustomization,
+    proCustomization_roadmap,
     playButton,
     gamepad,
     ryu_feature,
@@ -42,7 +27,9 @@ import {
     luke_feature,
     jamie_feature,
     chunli_feature,
-    akuma_feature
+    akuma_feature,
+    gameplay_roadmap,
+    software_roadmap
 } from "../assets";
 
 import {
@@ -87,9 +74,7 @@ export const navigation = [
     },
 ];
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
-
-export const notificationImages = [notification4, notification3, notification2];
+export const heroIcons = [ file02, searchMd, plusSquare];
 
 export const proPlayers = [
     {
@@ -131,7 +116,7 @@ export const roadmap = [
         text: "SFCoach will get you instant, AI-driven advice during your matches based on your opponent’s characters, movement and playstyle.",
         date: "March 2025",
         status: "done",
-        imageUrl: roadmap1,
+        imageUrl: gameplay_roadmap,
         colorful: true,
     },
     {
@@ -140,7 +125,7 @@ export const roadmap = [
         text: "Add featured Pro faces and voices to your AI to personilze your favorite coach.",
         date: "February 2026",
         status: "progress",
-        imageUrl: ProCustomization,
+        imageUrl: proCustomization_roadmap,
     },
     {
         id: "2",
@@ -148,7 +133,7 @@ export const roadmap = [
         text: "Have customized training plans and track your training load to become the best in optimized goals.",
         date: "March 2025",
         status: "done",
-        imageUrl: roadmap3,
+        imageUrl: "",
     },
     {
         id: "3",
@@ -156,7 +141,7 @@ export const roadmap = [
         text: "Our AI coach will integrate real-time insights from major Platforms—analyzing trends, discussions, and gameplay to keep you ahead.",
         date: "December 2025",
         status: "progress",
-        imageUrl: roadmap4,
+        imageUrl: software_roadmap,
     },
 ];
 
@@ -282,7 +267,6 @@ export const features = [
         title: "Real-Time Match Guidance",
         text: "Get instant, AI-driven advice during your matches based on your opponent’s moves, frame data, and your playstyle. The AI helps you react efficiently, counter effectively, and adapt on the fly.",
         backgroundUrl: "./src/assets/features/card-1.svg",
-        iconUrl: featureIcon1,
         imageUrl: ryu_feature,
     },
     {
@@ -290,7 +274,6 @@ export const features = [
         title: "Advanced Frame Data Analysis",
         text: "Stay ahead with precise frame data breakdowns. Know when to attack, block, or punish based on frame advantage and move priority, helping you make optimal decisions in every situation.",
         backgroundUrl: "./src/assets/features/card-2.svg",
-        iconUrl: featureIcon2,
         imageUrl: ken_feature,
         light: true,
     },
@@ -299,7 +282,6 @@ export const features = [
         title: "Personalized Training Plans",
         text: "Improve with structured training plans tailored to your skill level and goals. The AI creates custom schedules, drills, and match simulations to help you level up efficiently.",
         backgroundUrl: "./src/assets/features/card-3.svg",
-        iconUrl: featureIcon3,
         imageUrl: luke_feature,
     },
     {
@@ -307,7 +289,6 @@ export const features = [
         title: "Pro-Style Customization",
         text: "Customize your AI coach’s voice, appearance, and personality to match your favorite Street Fighter pros. Train with advice and feedback that mirrors top-level competitors.",
         backgroundUrl: "./src/assets/features/card-4.svg",
-        iconUrl: featureIcon4,
         imageUrl: jamie_feature,
         light: true,
     },
@@ -316,7 +297,6 @@ export const features = [
         title: "Match Review & Insights",
         text: "Upload or sync your match replays for AI-powered analysis. Get breakdowns of key mistakes, strengths, and actionable tips to refine your gameplay.",
         backgroundUrl: "./src/assets/features/card-5.svg",
-        iconUrl: featureIcon1,
         imageUrl: chunli_feature,
     },
     {
@@ -324,7 +304,6 @@ export const features = [
         title: "Opponent Playstyle Recognition",
         text: "The AI learns and identifies different playstyles—rushdown, zoner, grappler, etc.—to give you specific strategies to counter your opponents effectively in real time.",
         backgroundUrl: "./src/assets/features/card-6.svg",
-        iconUrl: featureIcon2,
         imageUrl: akuma_feature,
     },
 ];

@@ -1,5 +1,4 @@
-import { background, background_sf } from "../../assets/index.js";
-import background_2 from "../../assets/background_2.jpg"; 
+import { background_Menu_2 } from "../../assets/index.js";
 
 export const Rings = () => {
   return (
@@ -35,7 +34,7 @@ export const HamburgerMenu = () => {
       <div className="absolute inset-0 opacity-[.5] w-full">
         <img
           className="w-full h-full object-cover object-center"
-          src={background_2}
+          src={background_Menu_2}
           alt="Background"
         />
       </div>

@@ -3,13 +3,10 @@ import Section from './Section'
 import Heading from './Heading'
 import Generating from './Generating'
 import ItemBox from './ItemBox'
-import hadouken from '../assets/hadouken.png'
 import sfcoachVideo from '../assets/sfcoach_v1.mp4'
-import kim from '../assets/kimberly.png'
-import matchReplay from '../assets/matchReplay.jpg'
-import { check, service1, service2, service3, ryu_feature } from '../assets'
+import { matchReplay_service, check, ryu_feature } from '../assets'
 import { ServicesList, ServicesIconsList } from '../constants'
-import { PhotoChatMessage, Gradient, VideoBar, VideoChatMessage } from "./design/Services"
+import { Gradient, VideoBar } from "./design/Services"
 import TagLine from './Tagline'
 
 const Services = () => {
@@ -156,7 +153,7 @@ const Services = () => {
                             <div className="relative h-[20rem] bg-n-8 rounded-xl
                             overflow-hidden md:h-[25rem]">
                                 <img
-                                    src={matchReplay}
+                                    src={matchReplay_service}
                                     alt="Art"
                                     width={520}
                                     height={400}

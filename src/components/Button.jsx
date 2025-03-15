@@ -1,6 +1,3 @@
-
-import ButtonSvg from "../assets/svg/ButtonSvg"
-
 const Button = ({ className, innerClassName, href, onClick, children, px, white }) => {
 
     const classes = `button relative inline-flex items-center

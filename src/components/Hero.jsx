@@ -1,9 +1,8 @@
-import { curve, heroBackground_sf, hero_sf, splash1, splash2, splash3, splash4, splash5 } from "../assets/index.js"
+import { heroBackground_sf, hero_sf, splash1, splash2, splash3, splash4, splash5 } from "../assets/index.js"
 import Section from "./Section"
 import ProPlayersList from "./ProPlayersList.jsx"
 import Button from "./Button"
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero"
-import { heroIcons } from "../constants/index.js"
+import { BackgroundGrafitti, BottomLine } from "./design/Hero"
 import { ScrollParallax } from "react-just-parallax"
 import { useRef } from "react"
 import Generating from "./Generating.jsx"
@@ -82,40 +81,11 @@ const Hero = () => {
 
 
                                 <ScrollParallax isAbsolutelyPositioned>
-                                    {/*<ul className="hidden absolute -left-[5.5rem]
-                                    bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop:blur
-                                    border border-n-1/10 rounded-2xl xl:flex">
-                                        {heroIcons.map((icon, index) => (
-                                            <li key={index} className="p-5">
-                                                <img
-                                                    src={icon}
-                                                    width={24}
-                                                    height={24}
-                                                    alt="Icon"
-                                                />
-                                            </li>
-                                        ))}
-                                    </ul>*/}
                                     <div className="
                                         hidden absolute -left-[5.5rem]
                                         bottom-[7.5rem] px-3 py-3 shadow-2xl shadow-violet-600 bg-[linear-gradient(90deg,_rgba(211,_50,_207,_0.9),_rgba(106,_19,_153,_0.9)_10%,_rgba(55,_5,_135,_0.9)_40%,_rgba(55,_5,_135,_0.9)_60%,_rgba(106,_19,_153,_0.9)_90%,_rgba(211,_50,_207,_0.9))]
-                                        backdrop:blur border border-[#f9f5fb] rounded-2xl xl:flex items-center">
-
-
-                                        {/*TEMP
-
-                                        OTHER STYLE
-                                        hidden absolute -left-[5.5rem]
-                                        bottom-[7.5rem] px-3 py-3 bg-n-9/80 backdrop:blur
-                                        border border-n-1/10 rounded-2xl xl:flex items-center
-
-                                        SF6 STYLE
-                                        hidden absolute -left-[5.5rem]
-                                        bottom-[7.5rem] px-3 py-3 bg-[linear-gradient(90deg,_rgba(211,_50,_207,_0.9),_rgba(106,_19,_153,_0.9)_10%,_rgba(55,_5,_135,_0.9)_40%,_rgba(55,_5,_135,_0.9)_60%,_rgba(106,_19,_153,_0.9)_90%,_rgba(211,_50,_207,_0.9))]
                                         backdrop:blur border border-[#f9f5fb] rounded-2xl xl:flex items-center"
-
-                                        */}
-
+                                    >
                                         <img
                                             src={boltIcon}
                                             className="w-auto h-8"
@@ -130,7 +100,6 @@ const Hero = () => {
                                 </ScrollParallax>
                             </div>
                         </div>
-                        {/*<Gradient />*/}
                     </div>
                     <div className="absolute scale-95 -top-[20%] left-1/2 w-[234%] -translate-x-1/2
                     md:-top-[46%] md:w-[138%] lg:-top-[60%]">
@@ -143,9 +112,9 @@ const Hero = () => {
                         />
                     </div>
 
-                    <BackgroundCircles />
+                    <BackgroundGrafitti />
                 </div>
-                <ProPlayersList className="hidden relative z-10 mt-20 lg:block"/>
+                <ProPlayersList className="hidden relative z-10 mt-20 lg:block" />
             </div>
             <BottomLine />
         </Section>

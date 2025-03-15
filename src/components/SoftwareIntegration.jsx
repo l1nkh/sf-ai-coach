@@ -3,9 +3,7 @@ import Section from './Section'
 import { softwareIntegrationApps, softwareIntegrationText, softwareIntegrationContent } from '../constants'
 import { check } from '../assets';
 import Button from './Button';
-import sfcoach from '../assets/sfcoach.svg';
-import sf6_white from '../assets/sf6_white.png';
-import sfcoach_colored from "../assets/sfcoach_colored.png"
+import { sfcoach_logo } from "../assets"
 import { LeftCurve, RightCurve } from './design/SoftwareIntegration'
 
 const SoftwareIntegration = () => {
@@ -53,7 +51,7 @@ const SoftwareIntegration = () => {
                             <div className="flex items-center justify-center
                             w-full h-full bg-n-8 rounded-full">
                                 <img
-                                    src={sfcoach_colored}
+                                    src={sfcoach_logo}
                                     width={190}
                                     height={40}
                                     alt="sfcoach logo"

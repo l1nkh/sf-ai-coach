@@ -1,15 +1,9 @@
-import brainwave from "./brainwave.svg";
 import check from "./check.svg";
-import brainwaveSymbol from "./brainwave-symbol.svg";
-import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
 import gradient from "./gradient.png";
-import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
-import yourlogo from "./yourlogo.svg";
-import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
 import plusSquare from "./plus-square.svg";
@@ -19,15 +13,9 @@ import disc02 from "./disc-02.svg";
 import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
-import background from "./background.jpg";
-import background_sf from "./background_sf.jpg";
-import ProCustomization from "./ProCustomization.png"
 import playButton from "./playButton.svg"
 import gamepad from "./gamepad.svg"
 
-import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
-import heroBackground from "./hero/hero-background.jpg";
 import hero_sf from "./hero/hero_sf.jpg";
 import heroBackground_sf from "./hero/heroBackground_sf.jpg";
 
@@ -42,38 +30,10 @@ import twitch from "./softwareIntegration/twitch.png";
 import capcom from "./softwareIntegration/capcom.png";
 import xbox from "./softwareIntegration/xbox.png";
 
-import service1 from "./services/service-1.png";
-import service2 from "./services/service-2.png";
-import service3 from "./services/service-3.png";
-
 import lines from "./pricing/lines.svg";
-import stars from "./pricing/stars.svg";
 
-import coins from "./roadmap/coins.png";
 import done from "./roadmap/done.svg";
-import hero from "./roadmap/hero.png";
-import roadmap1 from "./roadmap/image-1.png";
-import roadmap2 from "./roadmap/image-2.png";
-import roadmap3 from "./roadmap/image-3.png";
-import roadmap4 from "./roadmap/image-4.png";
 import undone from "./roadmap/undone.svg";
-
-import notification1 from "./notification/image-1.png";
-import notification2 from "./notification/image-2.png";
-import notification3 from "./notification/image-3.png";
-import notification4 from "./notification/image-4.png";
-
-import featureCard1 from "./features/card-1.svg";
-import featureCard2 from "./features/card-2.svg";
-import featureCard3 from "./features/card-3.svg";
-import featureCard4 from "./features/card-4.svg";
-import featureCard5 from "./features/card-5.svg";
-import featureCard6 from "./features/card-6.svg";
-import featureIcon1 from "./features/icon-1.svg";
-import featureIcon2 from "./features/icon-2.svg";
-import featureIcon3 from "./features/icon-3.svg";
-import featureIcon4 from "./features/icon-4.svg";
-import featureImage2 from "./features/image-2.png";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -95,11 +55,14 @@ import jwong from "../assets/proPlayers/jwong.png";
 import punk from "../assets/proPlayers/punk.png";
 import tokido from "../assets/proPlayers/tokido.png";
 
-import splash1 from "./graffitiSplashes/splash1.png";
-import splash2 from "./graffitiSplashes/splash5.png";
-import splash3 from "./graffitiSplashes/splash6.png";
-import splash4 from "./graffitiSplashes/splash11.png";
-import splash5 from "./graffitiSplashes/splash15.png";
+import graffiti_1 from "./graffitis/graffiti_1.png"
+import graffiti_2 from "./graffitis/graffiti_2.png"
+import graffiti_3 from "./graffitis/graffiti_3.png"
+import splash1 from "./graffitis/splash1.png";
+import splash2 from "./graffitis/splash5.png";
+import splash3 from "./graffitis/splash6.png";
+import splash4 from "./graffitis/splash11.png";
+import splash5 from "./graffitis/splash15.png";
 
 import ryu_feature from "./characters/ryu.png";
 import ken_feature from "./characters/ken.png";
@@ -108,19 +71,26 @@ import jamie_feature from "./characters/jamie.png";
 import chunli_feature from "./characters/chunli.png";
 import akuma_feature from "./characters/gouki_akuma.png";
 
+import background_Menu_1 from "./hamburguerMenu/background_1.jpg"
+import background_Menu_2 from "./hamburguerMenu/background_2.jpg"
+
+import sfcoach_logo from "../assets/sfcoach_colored.png"
+import sfcoach_logo_bw from "../assets/sfcoach_bw.png"
+
+import proCustomization_roadmap from "../assets/roadmap/proCustomization.png"
+import gameplay_roadmap from "../assets/roadmap/gameplay_roadmap.png"
+import software_roadmap from "../assets/roadmap/software_roadmap.png"
+
+import kimberly_service from "./services/kimberly.png"
+import matchReplay_service from "./services/matchReplay.jpg"
+
 export {
-  brainwave,
   check,
   check2,
   loading1,
-  brainwaveSymbol,
-  brainwaveWhiteSymbol,
   play,
   gradient,
-  smallSphere,
   grid,
-  yourlogo,
-  homeSmile,
   file02,
   searchMd,
   plusSquare,
@@ -130,11 +100,6 @@ export {
   chromecast,
   sliders04,
   loading,
-  background,
-  background_sf,
-  curve,
-  robot,
-  heroBackground,
   hero_sf,
   heroBackground_sf,
   curve1,
@@ -147,34 +112,9 @@ export {
   twitch,
   capcom,
   xbox,
-  service1,
-  service2,
-  service3,
   lines,
-  stars,
-  coins,
   done,
-  hero,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
   undone,
-  notification1,
-  notification2,
-  notification3,
-  notification4,
-  featureCard1,
-  featureCard2,
-  featureCard3,
-  featureCard4,
-  featureCard5,
-  featureCard6,
-  featureIcon1,
-  featureIcon2,
-  featureIcon3,
-  featureIcon4,
-  featureImage2,
   discordBlack,
   facebook,
   instagram,
@@ -197,7 +137,6 @@ export {
   splash3,
   splash4,
   splash5,
-  ProCustomization,
   playButton,
   gamepad,
   ryu_feature,
@@ -205,5 +144,17 @@ export {
   luke_feature,
   jamie_feature,
   chunli_feature,
-  akuma_feature
+  akuma_feature,
+  background_Menu_1,
+  background_Menu_2,
+  graffiti_1,
+  graffiti_2,
+  graffiti_3,
+  sfcoach_logo,
+  sfcoach_logo_bw,
+  kimberly_service,
+  matchReplay_service,
+  proCustomization_roadmap,
+  gameplay_roadmap,
+  software_roadmap
 };
